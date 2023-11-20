@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page DNC</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <img id="logoDNC" src="assets/logodnc.png" alt="Logo DNC">
+        
+        <div id="header-positioning">
+            <div>
+                <h1>Dê os primeiros passos da
+                    <br>sua carreira em Tecnologia</h1>
+            </div>
+            <br>
+            <div>
+                <p>
+                    Inscreva-se no curso gratuito de Introdução à
+                    <br>Tecnologia da DNC School e aprenda os principais
+                    <br>fundamentos para construir experiências efetivas.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <section id="sec1">
+        <div id="grid">
+            <div class="options">
+                <img src="assets/iconCertificate.svg" alt="Ícone de um Certificado">
+                <p>Certificado de conclusão</p>
+            </div>
+            <div class="options">
+                <img src="assets/iconClock.svg" alt="Ícone de um Relógio">
+                <p>4 horas de conteúdo</p>
+            </div>
+            <div class="options">
+                <img src="assets/iconCamera.svg" alt="Ícone de uma Câmera">
+                <p>Aulas online gravadas</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="sec2">
+        <div id="grid2">
+            <div id="video">
+                <img id="video-img" src="assets/video.svg" alt="Video">
+            </div>
+            <div id="txtLearn">
+                <h1>
+                    Aprenda com especialistas e<br>
+                    comece seu primeiro projeto
+                </h1>
+                <br>
+                <p>
+                    Conheça o processo de desenvolvimento e entenda como utilizar<br>
+                    os principais métodos e ferramentas da área para resolver<br>
+                    problemas complexos.
+                </p>
+                <br>
+                <p>
+                    Conquiste seu certificado e desenvolva um projeto prático para<br>
+                    aplicar seus conhecimentos.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="sec3">
+        <div>
+            <h1>
+                Mais de 500 alunos já iniciaram seus estudos
+            </h1>    
+        </div>
+        <div id="conteiner">
+            <div id="left" onclick="slideLeft()">
+                <img class="arrow" src="assets/leftArrow.svg" alt="Seta para Esquerda">
+            </div>
+            <div id="bruna" class="card">                
+                <img src="assets/bruna.svg" alt="Foto da Bruna">
+                <p>“O curso da DNC School foi o ponto de
+                    <br>partida da minha transição de carreira. Hoje
+                    <br>já consegui minha primeira vaga na área!”<br>
+                    <br><strong>Bruna, desenvolvedora Front-End</strong></p>
+            </div>
+            <div id="leonardo" class="card">
+                <img src="assets/leonardo.svg" alt="Foto do Leonardo">
+                <p>“Gostei muito da metodologia e da
+                    <br>plataforma da Escola DNC. Os materiais
+                    <br>são todos muito bons”<br>
+                    <br><strong>Leonardo, desenvolvedor Back-End</strong></p>
+            </div>
+            <div id="samantha" class="card">
+                <img src="assets/samantha.svg" alt="Foto da Samantha">
+                <p>“O curso da foi a mudança que eu precisava
+                    <br>para alcançar meus objetivos profissionais”<br>
+                    <br><strong>Samantha, desenvolvedora Front-End</strong></p>
+            </div> 
+            <div id="right" onclick="slideRight()">
+                <img class="arrow" src="assets/rightArrow.svg" alt="Seta para Direita">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div id="form">
+            <div>
+                <h1>
+                    Comece agora mesmo e dê o próximo passo da sua carreira
+                </h1>
+            </div>
+            <div>
+                <form action="https://api.sheetmonkey.io/form/pSLwQySLZsGveryVg9NWrc" method="POST">
+                    <p>
+                        <input class="input" placeholder="Nome" type="text" name="Name" required id="nome">
+                    </p>
+                    <p>
+                        <input class="input" placeholder="E-mail" type="email" name="Email" required id="email">
+                    </p>
+                    <p>
+                        <input class="input" placeholder="Telefone" type="number" name="Telefone" id="telefone">
+                    </p>
+
+                    <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+                    
+                    <p>
+                        <button id="ementa" type="submit"><strong>Acesse a ementa grátis</strong></button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
